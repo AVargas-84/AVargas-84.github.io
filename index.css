@@ -216,6 +216,8 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
+    border-radius: 10rem;
+    overflow: hidden;
     font-weight: 400;
 }
 
@@ -488,6 +490,10 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__image {
+    border-radius: 5%;
+}
+
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
@@ -533,7 +539,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -544,8 +550,10 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.about__photo-container {
-    margin-bottom: var(--gutter-normal);
+
+
+.about__photo{
+    border-radius: 20% / 50%;
 }
 
 @media(min-width: 901px) {
@@ -589,17 +597,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
-}
-
-.footer__github-buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.footer__github-buttons iframe {
-    height: 2.5rem;
-    width: 84px;
-    transform: translateY(3px);
 }
 
 @media(max-width: 500px) {
